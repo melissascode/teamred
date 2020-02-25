@@ -1,2 +1,2 @@
 # teamred
-Team Red's repository.
+Team Red's E-Learning project repository.
