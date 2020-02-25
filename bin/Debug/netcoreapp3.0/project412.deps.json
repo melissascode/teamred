@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "project412/1.0.0": {
+      "teamred/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "3.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
@@ -309,10 +309,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "project412.dll": {}
+          "teamred.dll": {}
         },
         "compile": {
-          "project412.dll": {}
+          "teamred.dll": {}
         }
       },
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/3.0.0": {
@@ -2216,7 +2216,7 @@
     }
   },
   "libraries": {
-    "project412/1.0.0": {
+    "teamred/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

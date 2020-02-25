@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/jnemith/programming/project412/project412.csproj": {}
+    "/home/jnemith/programming/teamred/teamred.csproj": {}
   },
   "projects": {
-    "/home/jnemith/programming/project412/project412.csproj": {
+    "/home/jnemith/programming/teamred/teamred.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jnemith/programming/project412/project412.csproj",
-        "projectName": "project412",
-        "projectPath": "/home/jnemith/programming/project412/project412.csproj",
+        "projectUniqueName": "/home/jnemith/programming/teamred/teamred.csproj",
+        "projectName": "teamred",
+        "projectPath": "/home/jnemith/programming/teamred/teamred.csproj",
         "packagesPath": "/home/jnemith/.nuget/packages/",
-        "outputPath": "/home/jnemith/programming/project412/obj/",
+        "outputPath": "/home/jnemith/programming/teamred/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jnemith/.nuget/NuGet/NuGet.Config"

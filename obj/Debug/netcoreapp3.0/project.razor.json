@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/jnemith/programming/teamred/teamred/project412.csproj",
+  "FilePath": "/home/jnemith/programming/teamred/teamred/teamred.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14341,7 +14341,7 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "project412",
+  "RootNamespace": "teamred",
   "Documents": [
     {
       "FilePath": "/home/jnemith/programming/teamred/teamred/Pages/Shared/_ValidationScriptsPartial.cshtml",
