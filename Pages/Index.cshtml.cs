@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace teamred.Pages
+namespace project412.Pages
 {
     public class IndexModel : PageModel
     {

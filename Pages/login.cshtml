@@ -1,0 +1,38 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Login";
+    ViewData["Header"] = "Login or Register";
+    ViewData["Login"] = true;
+}
+<body>
+    <div class="forms">
+        <div class="box-base box center hold">
+            <span class="large">Login</span>
+            <span class="small"><a href="">Forgot password</a></span>
+            <form method="post">
+                <input name="username" placeholder="Username">
+                <input name="password" placeholder="Password" type="password">
+                <input value="Login" type="submit">
+            </form>
+        </div>
+        <div class="box-base box center">
+            <span class="large">Register</span>
+            <form method="post">
+                <input name="username" placeholder="Username">
+                <input name="password" placeholder="Password" type="password">
+                <input name="password" placeholder="Confirm Password" type="password">
+                <label>Choose a security question:<br>
+                    <select name="questions">
+                        <option value="1">Favorite teacher</option>
+                        <option value="2">Name of your pet</option>
+                        <option value="3">Youngest cousin's name</option>
+                    </select>
+                </label>
+                <input name="answer" placeholder="Answer">
+                <input value="Register" type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
