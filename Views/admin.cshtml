@@ -1,0 +1,50 @@
+<div>
+    <a class="btn" href="#collmr" data-toggle="collapse" aria-expanded="false">
+        Modify/Remove a study plan
+    </a>
+    <div id="collmr" class="collapse">
+        <form method="post">
+            <label style="margin: 0;">Select a study plan:<br>
+                <select name="studyplans">
+                    <option value="sp0">Study Plan #0</option>
+                    <option value="sp1">Study Plan #1</option>
+                    <option value="spn">Study Plan #n</option>
+                </select>
+            </label>
+            <ul class="plans" style="margin-bottom:5px;">
+                <li><a href="#" class="btn">Remove</a> - Learning Material 1</li>
+                <li><a href="#" class="btn">Remove</a> - Learning Material 2</li>
+                <li><a href="#" class="btn">Remove</a> - Learning Material 3</li>
+            </ul>
+            <input name="spupdate" type="file"><br>
+            <input value="Add Learning Plan" type="submit">
+            <input value="Remove Study Plan" type="submit">
+        </form>
+    </div>
+</div>
+<div>
+    <a class="btn" href="#create" data-toggle="collapse" aria-expanded="false">
+        Create a new study plan
+    </a>
+    <div id="create" class="collapse">
+        <form method="post">
+            <input name="name" placeholder="Name">
+            <input name="desc" placeholder="Description">
+            <input name="file" type="file" accept=".imscc"><br>
+            <input style="margin-top:7px;" value="Create" type="submit">
+        </form>
+    </div>
+</div>
+<div>
+    <a class="btn" href="#accept" data-toggle="collapse" aria-expanded="false">
+        View pending requests
+    </a>
+    <div id="accept" class="collapse">
+        <ul class="plans">
+            List of requests:
+            <li><a href="#" class="btn">Accept</a> - User: username requests Study Plan #0</li>
+            <li><a href="#" class="btn">Accept</a> - User: username requests Study Plan #1</li>
+            <li><a href="#" class="btn">Accept</a> - User: username2 requests Study Plan #n</li>
+        </ul>
+    </div>
+</div>

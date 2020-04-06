@@ -1,36 +1,53 @@
 @page
-@model IndexModel
+@model LoginModel
 @{
-    ViewData["Title"] = "Login";
-    ViewData["Header"] = "Login or Register";
+    ViewData["Title"] = "Login or Register";
     ViewData["Login"] = true;
+    string[] questions = @teamred.Startup.QUESTIONS;
 }
 <body>
     <div class="forms">
         <div class="box-base box center hold">
             <span class="large">Login</span>
-            <span class="small"><a href="">Forgot password</a></span>
-            <form method="post">
-                <input name="username" placeholder="Username">
-                <input name="password" placeholder="Password" type="password">
-                <input value="Login" type="submit">
+            <span class="small">
+                <a class="btn" href="#c" data-toggle="collapse" aria-expanded="false">Forgot password</a>
+            </span>
+            <form method="post" class="form">
+                <input class="margin-tb" name="username" placeholder="Username">
+                <input class="margin-tb" name="password" placeholder="Password" type="password">
+                <input class="margin-tb" value="Login" type="submit">
+            </form>
+        </div>
+        <div id="c" class="box-base box center hold collapse">
+            <span class="large">Reset Password</span>
+            <form method="post" class="form">
+                <input class="margin-tb" name="username" placeholder="Username">
+                <label>Select your security question:<br>
+                    <select name="questions">
+                        @for (var i = 0; i < questions.Length; i++) {
+                            <option value="@i">@questions[@i]</option>
+                        }
+                    </select>
+                </label>
+                <input class="margin-tb" name="answer" placeholder="Answer">
+                <input class="margin-tb" value="Reset" type="submit">
             </form>
         </div>
         <div class="box-base box center">
             <span class="large">Register</span>
-            <form method="post">
-                <input name="username" placeholder="Username">
-                <input name="password" placeholder="Password" type="password">
-                <input name="password" placeholder="Confirm Password" type="password">
+            <form method="post" class="form">
+                <input class="margin-tb" name="username" placeholder="Username">
+                <input class="margin-tb" name="password" placeholder="Password" type="password">
+                <input class="margin-tb" name="passwordconf" placeholder="Confirm Password" type="password">
                 <label>Choose a security question:<br>
                     <select name="questions">
-                        <option value="1">Favorite teacher</option>
-                        <option value="2">Name of your pet</option>
-                        <option value="3">Youngest cousin's name</option>
+                        @for (var i = 0; i < questions.Length; i++) {
+                            <option value="@i">@questions[@i]</option>
+                        }
                     </select>
                 </label>
-                <input name="answer" placeholder="Answer">
-                <input value="Register" type="submit">
+                <input class="margin-tb" name="answer" placeholder="Answer">
+                <input class="margin-tb" value="Register" type="submit">
             </form>
         </div>
     </div>

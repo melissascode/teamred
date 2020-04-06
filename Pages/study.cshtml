@@ -1,0 +1,24 @@
+@page "{sp?}"
+@model StudyModel
+@{
+    if (Model.Sp == null) {
+        RedirectToPage("/index");
+    }
+    ViewData["Title"] = @Model.Title;
+}
+<body>
+    <div class="box-base box material">
+        <span class="large">Chapter #1 - Chapter Title</span>
+        <span class="material-item">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mattis sapien, non rutrum ligula tincidunt eget. Etiam varius imperdiet condimentum. Nam sit amet elementum mi. Aenean ut purus tincidunt, porttitor quam convallis, tempus mi. Integer lobortis vel justo id consequat. In ac congue ipsum, nec hendrerit dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ex eu urna laoreet dictum. Proin vulputate libero at felis lobortis vestibulum. Nulla tincidunt metus quis elit imperdiet feugiat. Donec dignissim eros nisl. Suspendisse feugiat mauris ipsum, nec mollis purus tempus vitae. Quisque nunc nisi, faucibus non risus eu, pharetra tempor nisl. Proin magna justo, gravida sit amet elit in, luctus interdum orci. Quisque semper pharetra purus sed fringilla. Sed sed sem mauris.<
+
+Ut molestie varius enim nec varius. Suspendisse facilisis lacus eu diam dictum, sed volutpat elit hendrerit. Fusce laoreet, orci id suscipit eleifend, libero quam tincidunt lacus, sit amet ullamcorper tellus lorem non nisi. Donec interdum nunc odio, non venenatis nunc commodo ac. Praesent odio sem, placerat ac mi non, porttitor aliquet lacus. Pellentesque odio ipsum, consectetur sed tristique ac, auctor sit amet quam. Mauris nec sagittis turpis, a luctus ipsum. Maecenas a consequat ipsum. Suspendisse velit risus, finibus ac neque porta, aliquam sodales quam. Cras erat enim, sollicitudin condimentum purus sed, venenatis rutrum ante. Praesent non eros lacinia, mattis dolor sit amet, accumsan metus. Integer euismod, lorem ac pharetra aliquet, justo nibh sagittis dolor, luctus finibus nulla nibh vel lorem. Suspendisse vestibulum quis diam quis ultrices. Quisque a dui sed nunc fermentum rhoncus. Nulla interdum venenatis lectus quis viverra. Morbi quis pretium sem.
+
+Pellentesque eu auctor augue. Vestibulum posuere ex sit amet fermentum facilisis. Aenean vehicula risus sit amet diam cursus bibendum. Phasellus convallis rhoncus nisl at porttitor. Ut volutpat sem sit amet porta rutrum. Sed ipsum lorem, rutrum ac elementum eget, rutrum et felis. Sed nisi mi, dapibus sed tincidunt eu, sodales sed augue. Sed eget lorem urna. Donec vestibulum turpis a ultrices maximus. Sed elementum augue vitae diam varius dapibus a feugiat neque. Aliquam vitae sem in ligula tempus tempus ac vel metus. Aenean fermentum purus ex, at pellentesque justo varius vel. Nam tincidunt non quam ac placerat.
+
+Nunc malesuada quam at libero ultrices, vitae porta justo mattis. Fusce volutpat quam eget fringilla luctus. Vestibulum finibus velit eget lacinia sollicitudin. In ornare neque ullamcorper dignissim interdum. Ut consequat est dui, vitae pharetra elit luctus id. Quisque ligula dolor, sollicitudin ut viverra vitae, bibendum et tellus. Nulla eu viverra sem. Curabitur ultricies elit in ultricies dignissim. Proin malesuada vel odio in mattis. Morbi pretium sagittis enim, a pulvinar sapien euismod eu. In ac nisl tortor. Nullam a interdum tortor. Duis efficitur dolor non sapien suscipit dictum.
+
+In enim lorem, maximus et eros non, pharetra imperdiet erat. Morbi scelerisque odio eu massa pellentesque tempus eget sit amet dolor. Suspendisse convallis vehicula imperdiet. Fusce tellus mauris, blandit ut odio ac, venenatis cursus augue. Nulla tincidunt suscipit nibh, et ornare dui consequat eget. Suspendisse et odio porta, scelerisque dolor eget, ullamcorper mauris. Aliquam erat volutpat. Vivamus vitae ligula facilisis, scelerisque odio ut, rhoncus elit. Ut cursus urna sem. Maecenas dignissim dictum est. Maecenas risus ex, tempus vitae diam in, fringilla ultricies urna. Morbi rutrum est enim, in volutpat elit blandit eget. Praesent faucibus cursus risus, quis mollis massa congue a. 
+        </span>
+    </div>
+</body>

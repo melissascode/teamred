@@ -1,0 +1,33 @@
+@page
+@model AccountModel
+@{
+    ViewData["Title"] = "Account Information";
+    @* Need all user information here *@
+    string user = "Username";
+    string security_q = "question?";
+    bool admin = false;
+}
+<body>
+    <div class="box-base box">
+        @user's user page
+        @if (admin == false) {
+            @Html.Partial("~/Views/user.cshtml")
+        } else {
+            @Html.Partial("~/Views/admin.cshtml")
+        }
+        <div>
+            <a class="btn" href="#creset" data-toggle="collapse" aria-expanded="false">
+                Reset password
+            </a>
+            <div id="creset" class="collapse">
+                Security question: @security_q
+                <form>
+                    <input name="answer" placeholder="Security answer" type="password">
+                    <input name="password" placeholder="New password" type="password">
+                    <input name="confpassword" placeholder="Confirm password" type="password">
+                    <input value="Reset" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

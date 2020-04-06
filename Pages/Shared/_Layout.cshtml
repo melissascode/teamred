@@ -1,6 +1,10 @@
 ﻿@{
+    @* need to be able to check if user is logged in or not (cookies?) *@
+    string user = "";
     if(ViewData["Login"] == null) {
         ViewData["Login"] = false;
+        user = "Username"; @* This should get the logged in user, doesnt have to be a string *@
+        bool user_type; @* Should hold user type from database *@
     }
 }
 <!DOCTYPE html>
@@ -13,17 +17,16 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    @if (!ViewData["Login"].Equals(true)) {
-        <div class="stick">
-            <a href="" class="username">Username</a>
-            <a href="" class="username">[Log out]</a>
-        </div>
-    }
     <div class="header-container">
         <div class="box-base header">
             <div class="title">
-                @ViewData["Header"]
+                @ViewData["Title"]
             </div>
+            @if (!ViewData["Login"].Equals(true)) {
+                <a class="nav-item" href="/">Home</a>
+                <a href="account" class="nav-item">@user</a> @* Display username *@
+                <a href="" class="nav-item">[Log out]</a> @* Should logout, redirect *@
+            }
         </div>
     </div>
     <div class="container">

@@ -1,10 +1,17 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "test";
-    ViewData["Header"] = "test";
+    ViewData["Title"] = "Welcome";
 }
-
 <body>
-    @*  *@
+    <div class="box-base box">
+        <ul class="plans">
+            <span style="font-size:20px;">Available Study Plans</span>
+            <li><a class="sp-item" href="study?sp=0">Study Plan #0</a> - Quisquam est qui dolorem quia dolor sit , consectetur, adipisci velit...</li>
+            <li><a class="sp-item" href="study?sp=0">Study Plan #1</a> - Porro quisquam est dolorem ipsum quia , consectetur,  velit...</li>
+            <li><a class="sp-item" href="study?sp=0">Study Plan #2</a> - Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...</li>
+            <li><a class="sp-item" href="study?sp=1">Study Plan #3</a> - Lorem Ipsum neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</li>
+            <li><a class="sp-item" href="study?sp=n">Study Plan Name</a> - Sample description</li>
+        </ul>
+    </div>
 </body>
