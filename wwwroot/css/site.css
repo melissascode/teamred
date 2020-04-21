@@ -1,48 +1,52 @@
 ﻿html, body {
   height: 100%;
-  background-color: #ebdbcc;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  color: black;
+  /* width: 100vw; */
+}
+
+.box-base {
+  background-color: #b2d9dd;
+  margin: 20px;
+  box-shadow: 2px 2px 2px #333;
+  border-radius: 2px;
+}
+
+.box {
+  padding: 20px;
 }
 
 .header-container {
   display: flex;
-  justify-content: center;
-}
-
-.box-base {
-  background-color: #ea96a0;
-  margin: 25px;
-  box-shadow: 2px 2px 1px #333;
-}
-
-.box {
-  padding: 25px;
-  display: flex;
-  align-content: space-evenly;
-  flex-flow: column;
+  flex-direction: column;
 }
 
 .header {
-  font-size: 22px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 30vw;
+  font-weight: bold;
+  font-size: 22px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 50px;
 }
 
-.stick {
-  position: fixed;
-  top: 5px;
-  margin-left: 5px;
+.nav-item {
+  font-weight: normal;
+  font-size: 18px;
+  margin-left: 15px;
 }
 
-.username {
-  color: #225045;
+.plans {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sp-item {
+  text-decoration: underline;
+  margin: 5px;
 }
 
 .forms {
@@ -51,14 +55,32 @@
   justify-content: space-evenly;
 }
 
-form {
+.material {
+  display: flex;
+  flex-flow: column;
+}
+.material-item {
+  white-space: pre-line;
+}
+
+.btn {
+  padding: 0;
+  text-decoration: underline;
+  font-size: inherit;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #43477e;
+}
+
+.form {
   display: flex;
   flex-direction: column;
 }
-input {
+.margin-tb {
   margin-top: 5px;
   margin-bottom: 20px;
-  box-shadow: 1px 1px 3px #666;
 }
 select {
   font-size: 1em;
@@ -69,7 +91,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: inherit;
+  color: #43477e;
   text-decoration: none;
 }
 
