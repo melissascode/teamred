@@ -9,10 +9,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace project412
+namespace teamred
 {
     public class Startup
     {
+        public static string[] QUESTIONS = {
+            "Favorite teacher",
+            "First pet's name"
+        };
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -24,7 +28,7 @@ namespace project412
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            // services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
